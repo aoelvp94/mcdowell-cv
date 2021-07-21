@@ -20,96 +20,83 @@
 %% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 %% SOFTWARE.
 
-% The font could be set to Windows-specific Calibri by using the 'calibri' option
 \documentclass[]{mcdowellcv}
 
 % For mathematical symbols
 \usepackage{amsmath}
 
 % Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Aldo Escobar}
+\address{Moldes 1435 14E \linebreak CABA, Argentina}
+\contacts{3814144677 \linebreak aoelvp94@gmail.com \linebreak 11/11/1994}
 
 \begin{document}
 
-	% Print the header
-	\makeheader
+% Print the header
+\makeheader
+
+% Print the content
+\begin{cvsection}{EXPERIENCIA LABORAL}
+	\begin{cvsubsection}{Data Mining Analyst}{dataEvo}{Agosto 2018 - Mayo 2019}
+		\begin{itemize}
+			\item Análisis de datos y creación de visualizaciones usando datos de Twitter para campañas políticas.
+			\item Creación de dashboards usando Shiny para presentar resultados del algoritmo devoBooster (modelo propio).
+			\item Desarrollo y mejora de modelos de aprendizaje no supervisado para entender y mejorar la performance de devoBooster.
+		\end{itemize}
+	\end{cvsubsection}
 	
-	% Print the content
-	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV			
-			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
-			\end{itemize}
+	\begin{cvsubsection}{Data Engineer}{Nubimetrics}{Mayo 2019 - Diciembre 2019}
+		\begin{itemize}
+			\item Tratado de outliers y armado de algoritmos dedetección de valores anómalos.
+			\item Refactorización de la solución core de Nubimetrics migrando funciones hechas en Spark SQL a funciones nativas de Spark, implementando tests unitarios y de integración.
+			\item Automatización de procesos de ETL y de reporting usando servicios de Azure.
+		\end{itemize}
+	\end{cvsubsection}
+	
+	\begin{cvsubsection}{Data Engineer}{Mutt Data}{Diciembre 2019 - Actualidad}
+		\begin{itemize}
+			\item Ayudar en la creación de ETLs para migraciones de datos desde Teradata hacia Athena aportando mecanismos de validación de datos.
+			\item Participación como docente de un seminario de Digital House brindando seminarios sobre Apache Airflow y Apache Spark.
+			\item Refactorización de procesos ETL implementados con Sqoop y Airflow aplicando buenas prácticas para realizar la migración de datos desde Oracle a Impala.
+			\item Creación de un dashboard analítico que provee un diagnóstico automático aplicando analytics y soluciones basadas en aprendizaje no supervisado con datos geográficos.
+			\item Creación de un producto de datos automatizado que procesa un score créditicio de clientes usando datos de telecomunicaciones y bancarios, despliegue de servicios para el soporte de modelos de machine learning, bases de datos y un dashboard para la consulta de datos.
+		\end{itemize}
+	\end{cvsubsection}
+	
+	\begin{cvsubsection}{Consultor Independiente}{}{Enero 2020 - Actualidad}
+		\begin{itemize}
+			\item Armado de un programa de escritorio para computar métricas y elaborar reportes sobre sistemas de riego.
+			\item Puesta en producción de un scraper web para el almacenamiento de datos y su posterior transformación utilizando AWS Batch, CloudWatch Events, Lambda, ECS, ECR implementando repositorios con pipelines de CI/CD.
+			\item Armado de una solución que integra datos de redes sociales para el armado de dashboards analíticos.
+			\item Creación de un dashboard analítico usando Apache Superset (montado sobre una EC2 y utilizando un pipeline de CI/CD) para consumir datos de diversas fuentes tales como RDS, Athena, Google Sheet.
+		\end{itemize}
+	\end{cvsubsection}
+	
+	\begin{cvsection}{Educación}
+		\begin{cvsubsection}{Ingeniero en Sistemas de Información}{Universidad Tecnologica Nacional - Facultad Regional Tucumán}{2013 - 2018}
 		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
-			\begin{itemize}
-				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
-				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
-			\end{itemize}
+		\begin{cvsubsection}
+			{cvsubsection}{Master in Management + Analytics}{Universidad Torcuato di Tella}{2018 - 2020}
 		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
+	\end{cvsection}
+	
+	\begin{cvsection}{Certificaciones y logros}
+		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
-				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
-			Visual Studio Core (Summer 2003)		
-			\begin{itemize}
-				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
-				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
-			\end{itemize}
-			Programmer Productivity Research Center (Summers 2001, 2002)
-			\begin{itemize}
-				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
-				\item Created test case generation tool which creates random XML docs from XML Schema.
+				\item \textbf{Septimo mejor promedio en UTN FRT} (2017) - Promedio 8.53
+				\item \textbf{Apache Airflow Fundamentals} (Marzo 2021) - Astronomer Academy
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
 	
-	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
+	\begin{cvsection}{Lenguajes y Tecnologías}
+		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Technical Experience}
-		\begin{cvsubsection}{Projects}{}{}
-			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Additional Experience and Awards}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+				\item Python (librerías de ML, procesamiento de datos, data viz, dashboarding, desarrollo web, scripting, etc).
+				\item Scala (Programación funcional, Spark, tests unitarios y de integración), R (librerías de ML, procesamiento de datos, Shiny y data viz).
+				\item Bash, SQL y NoSQL.
+				\item Apache Spark, Apache Airflow, Docker, Docker-Compose, K8s, Git workflow, conocimientos de desarrollo web, CI/CD.
+				\item AWS, Azure.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
